@@ -129,8 +129,10 @@ color: #4d5ae5;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    max-width: 496px;
-    margin: 0 auto 48px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 48px;
+    max-width: 522px;
 }
 
 .order-button{
@@ -141,9 +143,13 @@ color: #4d5ae5;
     letter-spacing: 0.04em;
     color: #fff;
     background-color: #4d5ae5;
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;
     cursor: pointer;
     display: block;
     margin: 0 auto;
+    padding: 0;
 }
 
 .order-button:hover,
@@ -156,15 +162,7 @@ color: #4d5ae5;
 
 /* #region benefits */
 
-.benefits-items-title{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.visually-hidden{
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -174,15 +172,35 @@ color: #4d5ae5;
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden;   
+    overflow: hidden;
 }
 
-.benefits-items{
+.benefits-list{
+    display: flex;
+    gap: 24px;
+}
+
+.benefits-items-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    padding-bottom: 8px;
+}
+
+.benefits-item{
+width: calc((100% - 72px) /4);
+}
+
+.benefits-items-text{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 }
+
+
 
 
 /* #endregion benefits */
@@ -193,6 +211,10 @@ color: #4d5ae5;
     background-color: #f4f4fd;
 }
 
+.team-item-text-content{
+    padding: 32px 0;
+}
+
 .team-title{
         font-size: 36px;
         line-height: 1.11;
@@ -200,27 +222,40 @@ color: #4d5ae5;
         text-align: center;
         color: #2e2f42;
         text-transform: capitalize;
+        align-items: center;
+        margin-bottom: 72px;
 }
 
-.team-list{
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
+.team-items {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
     background-color: #fff;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.team-list-title{
+.team-item-title{
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+        margin-bottom: 8px;
+        
 }
 
-.team-items{
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #434455;
+
+
+.team-items-text {
+    background-color: #fff;
 }
 
 
@@ -236,6 +271,19 @@ color: #4d5ae5;
         text-align: center;
         color: #2e2f42;
         text-transform: capitalize;
+        margin-bottom: 72px;
+}
+
+.portfolio-list{
+        display: flex;
+        row-gap: 48px;
+        column-gap: 24px;
+        flex-wrap: wrap;
+}
+
+.portfolio-item{
+  max-width: 360px;
+  border: 1px solid #e7e9fc;
 }
 
 .portfolio-items-title{
@@ -245,13 +293,18 @@ color: #4d5ae5;
         letter-spacing: 0.02em;
         color: #2e2f42;
         text-transform: capitalize;
+        margin-top: 32px;
+        margin-bottom: 8px;
+        margin-left: 16px;
 }
 
-.portfolio-items{
+.portfolio-items-text{
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
+        margin-bottom: 32px;
+        margin-left: 16px;
 }
 /* #endregion portfolio */
 
@@ -263,6 +316,14 @@ color: #4d5ae5;
 
 .footer-logo .logo-part {
     color: #f4f4fd;
+    padding-top: 100px;
+    margin-bottom: 16px;
+}
+
+.footer-logo{
+    display: inline-block;
+    padding-top: 100px;
+    margin-bottom: 16px;
 }
 
 .footer-text{
@@ -270,5 +331,8 @@ color: #4d5ae5;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
+        display: block;
+        max-width: 264px;
+        padding-bottom: 100px;
 }
 /* #endregion footer */
