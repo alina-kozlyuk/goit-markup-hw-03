@@ -291,6 +291,7 @@ width: calc((100% - 72px) /4);
 .portfolio-item{
   max-width: 360px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-items-title{
