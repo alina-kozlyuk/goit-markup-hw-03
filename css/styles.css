@@ -123,6 +123,11 @@ color: #4d5ae5;
     background-color: #2e2f42;;
 }
 
+.page-hero{
+    padding: 188px 0;
+}
+
+
 .main-title{
     font-size: 56px;
     line-height: 1.07;
@@ -132,7 +137,7 @@ color: #4d5ae5;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 48px;
-    max-width: 522px;
+    max-width: 496px;
 }
 
 .order-button{
@@ -145,6 +150,7 @@ color: #4d5ae5;
     background-color: #4d5ae5;
     min-width: 169px;
     height: 56px;
+    border: none;
     border-radius: 4px;
     cursor: pointer;
     display: block;
@@ -186,7 +192,7 @@ color: #4d5ae5;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .benefits-item{
@@ -239,6 +245,7 @@ width: calc((100% - 72px) /4);
     color: #434455;
     background-color: #fff;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-item-title{
@@ -298,9 +305,8 @@ width: calc((100% - 72px) /4);
 }
 
 .portfolio-item-text-content{
-    margin-top: 32px;
-    margin-bottom: 32px;
-    padding-left: 16px;
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
 }
 
 .portfolio-items-text{
@@ -315,6 +321,7 @@ width: calc((100% - 72px) /4);
 
 .page-footer{
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 
 .footer-logo .logo-part {
